@@ -79,14 +79,19 @@ img <- image_read(image_path)
 
 # Add title
 
-img_ <- image_annotate(img_, "Grand Canyon National Park", font = "Cinzel Decorative", 
-                       color = text_color, size = 300, gravity = "north", 
-                       location = "+0+400")
+# Title 'A PORTRAIT OF'
+img_ <- image_annotate(img, "A Portrait of", font = "Cinzel Decorative",
+                       color = text_color, size = 125, gravity = "north",
+                       location = "+0+200")
+# Title NAME
+img_ <- image_annotate(img_, "Grand Canyon National Park", weight = 700, 
+                       font = "Cinzel Decorative", location = "+0+400",
+                       color = text_color, size = 200, gravity = "north")
+
 
 img_ <- image_annotate(img_, "Created by Frederic Fery @fredffery | Tutorial by Spencer Schien @MrPecners", font = "Cinzel Decorative", 
                        color = text_color, size = 50, gravity = "south", 
                        location = "+0+400")
-
 
 
 
